@@ -1,0 +1,29 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2021": true
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "no-param-reassign": [2, {"props": false}],
+        "import/no-unresolved": 0,
+        "no-unused-vars": 1,
+        "no-shadow": "off",
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "no-trailing-spaces": "error"
+    },
+    "ignorePatterns": ["webpack.config.js"]
+}
